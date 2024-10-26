@@ -1,0 +1,16 @@
+# start_time = -1
+# mean = [0,0,0,0,0]
+# mean_ang_vel = 0
+
+#         heading[1] = angle
+#         stop_time = time.monotonic()
+#         ang_vel = Angular.get_ang_velocity(start_time, stop_time,heading)
+#         
+#         mean[0] = mean[1]
+#         mean[1] = mean[2]
+#         mean[2] = mean[3]
+#         mean[3] = mean[4]
+#         mean[4] = ang_vel
+#         mean_ang_vel = (mean[0]+mean[1]+mean[2]+mean[3]+mean[4])/5
+#         heading[0] = heading[1]
+#         start_time = time.monotonic()
