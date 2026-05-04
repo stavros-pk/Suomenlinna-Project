@@ -49,19 +49,19 @@ class fuzzy_controller():
         if x>= -180 and x<-80:
             HHL = fuzzy_controller.openLeft(x,-90,-80)
         if x> -100 and x<-20:
-            HL = fuzzy_controller.trapezoid(x,-100,-90,-30,-20)
+            HL = fuzzy_controller.trapezoid(x,-100,-90,-60,-50)
         if x> -30 and x<-10:
-            ML = fuzzy_controller.triangular(x,-30,-20,-10)
+            ML = fuzzy_controller.triangular(x,-60,-40,-20)
         if x> -20 and x<0:
-            SL = fuzzy_controller.triangular(x,-20,-10,0)
+            SL = fuzzy_controller.triangular(x,-40,-20,0)
         if x> -10 and x<10:
-            ZE = fuzzy_controller.triangular(x,-10,0,10)
+            ZE = fuzzy_controller.triangular(x,-20,0,20)
         if x> 0 and x<20:
-            SR = fuzzy_controller.triangular(x,0,10,20)
+            SR = fuzzy_controller.triangular(x,0,20,40)
         if x> 10 and x<30:
-            MR = fuzzy_controller.triangular(x,10,20,30)
+            MR = fuzzy_controller.triangular(x,20,40,60)
         if x> 20 and x<100:
-            HR = fuzzy_controller.trapezoid(x,20,30,90,100)
+            HR = fuzzy_controller.trapezoid(x,40,60,90,100)
         if x> 80 and x<=180:
             HHR = fuzzy_controller.openRight(x,80,90)
     

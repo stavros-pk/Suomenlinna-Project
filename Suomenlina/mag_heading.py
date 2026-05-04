@@ -15,7 +15,9 @@ class Heading():
     def heading_angle(self):
         data = self.mag.magnetic
         
-        angle = math.atan2(data[1], data[0])*180/math.pi;
+        angle = math.atan2(data[1], data[0])*180/math.pi
+        angle2 = math.atan2(data[2], data[1])*180/math.pi
+        angle3 = math.atan2(data[0], data[2])*180/math.pi
         #if angle <0:
         #    angle = 360 + angle
 

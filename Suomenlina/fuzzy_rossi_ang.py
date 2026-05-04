@@ -43,7 +43,6 @@ class fuzzy_controller():
             return 0
     #----------stavros----------
 
-    #Fuzzy Partition 
     def partitionH(x):
         HHL = 0;  HL = 0; ML = 0; SL = 0; ZE = 0; SR = 0; MR = 0; HR = 0; HHR = 0; 
         
@@ -74,15 +73,15 @@ class fuzzy_controller():
         if ang_vel> -100 and ang_vel< -60:
             HL = fuzzy_controller.openLeft(ang_vel,-100,-60)
         if ang_vel> -80 and ang_vel<-20:
-            ML = fuzzy_controller.trapezoid(ang_vel,-80,-60,-40,-20)
+            ML = fuzzy_controller.trapezoid(ang_vel,-70,-60,-35,-25)
         if ang_vel> -40 and ang_vel<-5:
-            SL = fuzzy_controller.triangular(ang_vel,-40,-20,-5)
+            SL = fuzzy_controller.triangular(ang_vel,-35,-20,-5)
         if ang_vel> -10 and ang_vel<10:
             ZE = fuzzy_controller.triangular(ang_vel,-10,0,10)
         if ang_vel> 5 and ang_vel<40:
-            SR = fuzzy_controller.triangular(ang_vel,5,20,40)
+            SR = fuzzy_controller.triangular(ang_vel,5,20,35)
         if ang_vel> 20 and ang_vel<80:
-            MR = fuzzy_controller.trapezoid(ang_vel,20,40,60,80)
+            MR = fuzzy_controller.trapezoid(ang_vel,25,35,60,70)
         if ang_vel> 60 and ang_vel<100:
             HR = fuzzy_controller.openRight(ang_vel,60,100)
     
@@ -182,15 +181,15 @@ class fuzzy_controller():
 
         if HL != 0:
             #areaPL, cPL = areaOR(PLTC, 180, 210)
-            areaHL, cHL = fuzzy_controller.areaOL(HL, -40, -30)
+            areaHL, cHL = fuzzy_controller.areaOL(HL, -60, -50)
                     
         if ML != 0:
-            areaML = fuzzy_controller.areaTP(ML, -40, -30, -20, -10)
-            cML = -25
+            areaML = fuzzy_controller.areaTP(ML, -60, -50, -20, -10)
+            cML = -30
         
         if SL != 0:
             areaSL = fuzzy_controller.areaTR(SL, -20, -10, 0)
-            cSL = -10
+            cSL = -20
             
         if ZE != 0:
             areaZE = fuzzy_controller.areaTR(ZE, -10, 0, 10)
@@ -198,15 +197,15 @@ class fuzzy_controller():
             
         if SR !=0:
             areaSR= fuzzy_controller.areaTR(SR, 0, 10, 20)
-            cSR = 10
+            cSR = 20
 
         if MR != 0:
-            areaMR = fuzzy_controller.areaTP(MR, 10, 20, 30, 40)
-            cMR = 25   
+            areaMR = fuzzy_controller.areaTP(MR, 10, 20, 50, 60)
+            cMR = 30   
 
         if HR != 0:
             
-            areaHR, cHR = fuzzy_controller.areaOR(HR, 30, 40)
+            areaHR, cHR = fuzzy_controller.areaOR(HR, 50, 60)
             
         numerator = areaHL*cHL + areaML*cML + areaSL*cSL + areaZE*cZE + areaSR*cSR + areaMR*cMR + areaHR*cHR
         denominator = areaHL + areaML + areaSL + areaZE + areaSR + areaMR + areaHR
@@ -227,9 +226,9 @@ class fuzzy_controller():
         
         return crispOutputFinal
 
-rudder_angle = fuzzy_controller(-40,10)
-crispOutputFinal = rudder_angle.get_angle()
-print("\nThe crisp TC value is: ", crispOutputFinal)
+#rudder_angle = fuzzy_controller(-40,10)
+#crispOutputFinal = rudder_angle.get_angle()
+#print("\nThe crisp TC value is: ", crispOutputFinal)
 
 '''
 # Display the fuzzy values for all fuzzy sets

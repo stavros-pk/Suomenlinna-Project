@@ -16,22 +16,22 @@ rotate2A = pwmio.PWMOut(board.GP13, frequency=5000, duty_cycle=0)
 while True:
     enable.value = 1
     
-    for x in range(45000, 65535, 600):
+    for x in range(45000, 50000, 600):
         rotate1A.duty_cycle = x
         rotate2A.duty_cycle = 0
         print("1A.duty_cycle ", rotate1A.duty_cycle)
         time.sleep(.1)
     
-    rotate1A.duty_cycle = 65535 # top speed
+    rotate1A.duty_cycle = 50000 # top speed
     print("1A.duty_cycle ", rotate1A.duty_cycle)
     time.sleep(1)
     
-    for x in range(45000, 65535, 600):
+    for x in range(45000, 50000, 600):
         rotate1A.duty_cycle = 0
         rotate2A.duty_cycle = x
         print("2A.duty_cycle ", rotate2A.duty_cycle)
         time.sleep(.1)
 
-    rotate2A.duty_cycle = 65535 # top speed
+    rotate2A.duty_cycle = 50000 # top speed
     print("2A.duty_cycle ", rotate2A.duty_cycle)
-    time.sleep(1)
+    time.sleep(1) 
