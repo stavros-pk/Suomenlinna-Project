@@ -400,13 +400,11 @@ The logged data enables direct **comparison between the Fuzzy Logic and PD contr
 
 3. **Upload files to the board**
 
-   Use a tool like [Thonny IDE](https://thonny.org/) or `mpremote` to upload all `.py` files to the microcontroller.
+   Use a tool like [Thonny IDE](https://thonny.org/) to upload all `.py` files to the microcontroller.
 
 4. **Run**
    ```bash
-   # Via Thonny: open main.py and press Run
-   # Or via mpremote:
-   mpremote run main.py
+   # Via Thonny: open code.py and press Run
    ```
 
 ---
