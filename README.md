@@ -135,7 +135,7 @@ Connecting the drive motor to the propeller at this small scale — while mainta
     <td align="center"><img width="1146" height="802" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/ccf5a1de-aff8-49fc-a095-a8bf18e1f4bd" /></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><b>General Arrangment of the Model</b></td>
+    <td colspan="2" align="center"><b>Azipod Configuaration</b></td>
   </tr>
 </table>
 </div>
@@ -160,19 +160,18 @@ The integration of these components required careful placement within the hull t
 
 ## System Architecture
 
-```
+---
 <div align="center">
 <table>
   <tr>
-    <td align="center"><img width="811" height="412" alt="Diagrams-Hardware Schematic drawio" src="https://github.com/user-attachments/assets/d02c00e3-8ca2-40f2-a8e3-23542165f015" />
-</td>
+    <td align="center"><img width="811" height="412" alt="Diagrams-Hardware Schematic drawio" src="https://github.com/user-attachments/assets/8d5c62eb-104e-4b65-841c-0fecac57fcd1" /></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><b>Hardware Schematic</b></td>
+    <td align="center"><b>Hardware Schematic</b></td>
   </tr>
 </table>
 </div>
-```
+---
 
 ---
 
@@ -415,6 +414,18 @@ The vessel is controlled and monitored through an **Adafruit IO** dashboard. The
 
 - **Control feeds** — Set heading target, throttle, and operating mode (manual / autonomous)
 - **Telemetry feeds** — Live display of current heading, sensor readings, and system status
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img width="1372" height="869" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/a8423ee9-2065-4a03-89e1-82542cbe851a" />
+</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><b>User Interface- Adafruit IO</b></td>
+  </tr>
+</table>
+</div>
 
 To set up your own dashboard, create the following feeds on Adafruit IO and add them to your `settings.toml` configuration file:
 
