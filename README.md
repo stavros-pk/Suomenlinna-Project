@@ -6,8 +6,8 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center"><img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/18cea3b3-703b-467f-952e-0f400f40100e" /></td>
-    <td align="center"><img width="525" height="394" alt="image" src="https://github.com/user-attachments/assets/90862220-67b6-4daa-a700-b22d1d99fd35" />
+    <td align="center"><img width="1920" height="908" alt="Screenshot (65)" src="https://github.com/user-attachments/assets/3b61d4fd-9dd6-4665-af12-dec3e1948ac6" /></td>
+    
 </td>
   </tr>
   <tr>
