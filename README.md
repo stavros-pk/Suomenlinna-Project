@@ -3,7 +3,19 @@
 > A functional prototype of an autonomous navigation and remote teleoperation system, implemented on a scale model of the Finnish ROPAX ferry **MS Suomenlinna II**.
 
 ---
-
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/18cea3b3-703b-467f-952e-0f400f40100e" /></td>
+    <td align="center"><img width="525" height="394" alt="image" src="https://github.com/user-attachments/assets/90862220-67b6-4daa-a700-b22d1d99fd35" />
+</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><b>3D CAD Model</b></td>
+  </tr>
+</table>
+</div>
+---
 ## Table of Contents
 
 - [Overview](#overview)
